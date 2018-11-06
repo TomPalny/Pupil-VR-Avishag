@@ -163,8 +163,10 @@ public class PupilGazeTracker:MonoBehaviour
 		#if !UNITY_WSA
 		if (Recorder.isRecording)
 		{
+            //line was added to see if unity stops cleanly without freezing
+            Recorder.isRecording = false;
 			Recorder.Stop ();
-		}
+        }
 		#endif
 		PupilTools.Disconnect ();
 

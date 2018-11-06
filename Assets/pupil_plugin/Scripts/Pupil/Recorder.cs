@@ -39,11 +39,11 @@ public class Recorder
 		c.clearFlags = CameraClearFlags.Color;
 		c.targetDisplay = 1;
 		c.stereoTargetEye = StereoTargetEyeMask.None;
-		#if UNITY_5_6_OR_NEWER
-		c.allowHDR = false;
-		c.allowMSAA = false;
-		#endif
-		c.fieldOfView = PupilSettings.Instance.currentCamera.fieldOfView;
+		//#if UNITY_5_6_OR_NEWER
+		//c.allowHDR = false;
+		//c.allowMSAA = false;
+		//#endif
+		c.fieldOfView = 60;
 		PupilTools.RepaintGUI ();
 	}
 
